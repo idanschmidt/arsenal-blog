@@ -1,64 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsenal blog</title>
-</head>
-<body>
-
-  <h1><center>Arsenal</center></h1><center><img src="https://upload.wikimedia.org/wikipedia/he/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png" alt="Arsenal Logo" width="200"></center>
-  <br><style> #date { background-color: red;width: 10%; } </style> <center><u>ברוכים הבאים לבלוג של עידן על ארסנל </u></center>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>בלוג ארסנל של עידן</title>
   <style>
     body {
       direction: rtl;
       text-align: right;
       font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: darkred;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    .question-box {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 300px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
-  <h2>הבלוג שלי</h2>
-  <p>שלום לכולם, אני עידן שמידט בן 28, נשוי ואני אוהד ארסנל. מאז שאני זוכר את עצמי אני אוהד את הקבוצה, רואה משחקים שלה, עצוב שהיא מפסידה ומאושר שהיא מנצחת.<br> החלטתי ליצור את הבלוג הזה מתוך מקום לפרוק את מה שאני חש בקשר לקבוצה, וגם בעקבות לימודיי (בדיקות תוכנה <a href="https://idanschmidt.github.io/Idan-schmidt--QA/"> QA) </a> במהלך העונה נתכונן לקראת המשחקים עם עדכונים ומחשבות, ולאחר כל משחק אביע את דעותיי ורגשותיי לגבי המשחק עצמו. <br> הבלוג יעודכן יום לפני משחק ועד יום אחד אחרי המשחק.  </p>
-<h3> עדכון ממני אליכם </h3>
-    <p> הקבוצה יצאה עם סגל של 30 שחקנים למסע שלה למזרח, הקבוצה נחתה בסינגפור, שם תנסה להתגבש, וכמובן להרים את הקצב לקראת מסע משחקי האימון שלה שם. שיהיה בהצלחה לארטטה והבחורים, <br> אמשיך לעדכן אותכם </p>
-  <h3>מחשבות לקראת המשחק</h3>
-  <p> אז מחר, הקבוצה תעלה למשחק ההכנה הראשון שלה במסע מחנה האימונים שלה, ותשחק מול מילאן. מילאן שמגיעה עם מאמן חדש ישן על הקווים ומתחילה תהליך של בנייה מחודשת לאחר העונה הנוראית שהייתה לה. <br>
-      מהצד שלנו ארסנל תרצה לתת לשחקנים זמן משחק, לחזור לכושר, להתחיל להריץ את השחקנים החדשים וגם לתת הזדמנות לצעירים.<br>
-      זה משחק ראשון של העונה, וכולנו מתרגשים לקראת עונה חדשה עם הרבה ציפיות .נאחל הרבה בהצלחה לצוות ולשחקנים                                                 </p>
-    <br><br>
-     <h3>דעתי על המשחק האחרון</h3> 
-    <p> הקבוצה ניצחה 1-0 את מילאן במשחק ההכנה הראשון שלה , ארטטה נתן לרוב השחקנים לקבל דקות משחק, וכמובן שחקני הרכש קיבלו דקות.<br>
-        סאקה הכריע את המשחק בתום 90 הדקות עם שער, לאחר מכן היה דו קרב פנדלים שהקבוצה הפסידה אבל זה היה סתם לשעשוע. <br>
-        לצערי לא ראיתי את המשחק כי לא מצאתי שידור. בכל מקרה משחק הכנה ראשון וניצחון ראשון.                                       </p>
-    <h3> משחק אחרון:</h3>
-    <p> ארסנל נגד מילאן (משחק ידידות) 0-1 - 23.07.25  </p>
-  <br><h3> משחק הבא:</h3> 
-    <p>ארסנל נגד ניוקסאל (משחק ידידות)- 27.07.25 </p>
-    
-    <h3> תוצאות המחזור:  </h3>
-     <p>     </p>
-   <div></div>
-   <center>
-        <h4>חידה שבועית</h4>
-  <p>מי הוא מלך השערים של ארסנל בכל הזמנים?</p>
-  <input type="text" id="answer" />
-  <button onclick="checkAnswer()">שלח תשובה</button>
-  <script>
-    function checkAnswer() {
-      var userAnswer = document.getElementById('answer').value;
-      if (userAnswer === "תיירי הנרי") {
-        alert("נכון!הנרי הוא מלך השערים עם 288 שערים בכל המסגרות.");
-      } else {
-        alert("לא נכון, נסו שוב.");
+
+  <header>
+    <h1>Arsenal</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/he/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png" alt="Arsenal Logo">
+    <p><u>ברוכים הבאים לבלוג של עידן על ארסנל</u></p>
+  </header>
+
+  <nav>
+    <a href="index.html">ראשי</a>
+    <a href="matches.html">סיקור משחקים</a>
+    <a href="https://idanschmidt.github.io/Idan-schmidt--QA/">לבלוג QA שלי</a>
+  </nav>
+
+  <section>
+    <h2>הבלוג שלי</h2>
+    <p>שלום לכולם, אני עידן שמידט, בן 28, אוהד מושבע של ארסנל מאז שאני זוכר את עצמי. החלטתי להקים את הבלוג הזה כדי לפרוק רגשות, לנתח משחקים, ולשתף אתכם בחוויות שלי לאורך העונה.<br>
+    במהלך העונה אעדכן כאן לפני ואחרי משחקים, אשתף מחשבות, רגשות ופרשנויות – באהבה ובקנאות של אוהד אמיתי.</p>
+  </section>
+
+  <section>
+    <h2>עדכון אחרון</h2>
+    <p>הקבוצה יצאה עם סגל של 30 שחקנים למסע באסיה. הם נחתו בסינגפור ויתחילו מחנה אימונים שכולל גם סדרת משחקים. נאחל הצלחה לארטטה והשחקנים – אני כמובן אמשיך לעדכן.</p>
+  </section>
+
+  <section class="question-box">
+    <h3>חידת השבוע</h3>
+    <p>מי הוא מלך השערים של ארסנל בכל הזמנים?</p>
+    <input type="text" id="answer" />
+    <button onclick="checkAnswer()">שלח תשובה</button>
+    <script>
+      function checkAnswer() {
+        var userAnswer = document.getElementById('answer').value.trim();
+        if (userAnswer === "תיירי הנרי" || userAnswer === "הנרי") {
+          alert("נכון! הנרי הוא מלך השערים עם 288 שערים בכל המסגרות.");
+        } else {
+          alert("לא נכון, נסו שוב.");
+        }
       }
-    }
-  </script>
-       <h3>הצטרפו אליי!</h3>
-    <p>אם אתם אוהדים של ארסנל או סתם אוהבים כדורגל, אני מזמין אתכם לעקוב אחר הבלוג שלי!</p> 
-     <h5> שלחו לי מייל ואשאיר אותכם מעודכנים</h5> <p>idanschmidt1234@gmail.com</p>
-</center>
-    <p></p><center>להיות מעודכנים<br>
-        <a href="https://www.365scores.com/he/football/team/arsenal-104">ארסנל</a> </center>
-</body
+    </script>
+  </section>
+
+  <section>
+    <h3>הצטרפו אליי!</h3>
+    <p>אם אתם אוהדי ארסנל או חובבי כדורגל – אני מזמין אתכם לעקוב אחרי הבלוג הזה, ולהיות חלק מהחוויה!</p>
+    <p>אפשר לשלוח לי מייל: <strong>idanschmidt1234@gmail.com</strong></p>
+  </section>
+
+  <footer>
+    <p>עודכן לאחרונה: 24 ביולי 2025</p>
+    <p><a href="https://www.365scores.com/he/football/team/arsenal-104" target="_blank">צפו בתוצאות וחדשות על ארסנל</a></p>
+  </footer>
+
+</body>
 </html>
+
