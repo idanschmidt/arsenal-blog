@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>סיקורי משחקים - בלוג ארסנל של עידן</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>בלוג ארסנל של עידן</title>
   <style>
     body {
       direction: rtl;
@@ -14,6 +14,10 @@
 
     header {
       text-align: center;
+    }
+
+    header img {
+      width: 200px;
     }
 
     nav {
@@ -29,32 +33,76 @@
     }
 
     section {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    .question-box {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 300px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>סיקורי משחקים</h1>
-    <p>כאן תוכלו לקרוא את הדעות, הסיכומים והמחשבות שלי אחרי כל משחק.</p>
+    <h1>Arsenal</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/he/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png" alt="Arsenal Logo">
+    <p><u>ברוכים הבאים לבלוג של עידן על ארסנל</u></p>
   </header>
 
   <nav>
-    <a href="index.html">חזרה לדף הראשי</a>
+    <a href="index.html">ראשי</a>
+    <a href="matches.html">סיקור משחקים</a>
+    <a href="https://idanschmidt.github.io/Idan-schmidt--QA/">לבלוג QA שלי</a>
   </nav>
 
   <section>
-    <h2>🟢 המשחק האחרון – ארסנל 1:0 מילאן (23.07.25)</h2>
-    <p>הקבוצה ניצחה את מילאן במשחק ההכנה הראשון שלה. סאקה כבש את שער הניצחון בדקה ה־78. <br>
-    למרות דו קרב הפנדלים שנערך לאחר מכן (בו הפסידה ארסנל), המשחק עצמו הסתיים בניצחון. <br>
-    לצערי לא ראיתי את המשחק בשידור חי, אך הדיווחים מדברים על הופעה מבטיחה של שחקני הרכש.</p>
+    <h2>הבלוג שלי</h2>
+    <p>שלום לכולם, אני עידן שמידט, בן 28, אוהד מושבע של ארסנל מאז שאני זוכר את עצמי. החלטתי להקים את הבלוג הזה כדי לפרוק רגשות, לנתח משחקים, ולשתף אתכם בחוויות שלי לאורך העונה.<br>
+    במהלך העונה אעדכן כאן לפני ואחרי משחקים, אשתף מחשבות, רגשות ופרשנויות – באהבה ובקנאות של אוהד אמיתי.</p>
   </section>
 
   <section>
-    <h2>⚽ המשחק הבא – ארסנל נגד ניוקאסל (27.07.25)</h2>
-    <p>משחק ידידות נוסף במחנה האימונים. הזדמנות נוספת לשחקנים להיכנס לכושר, לצוות לבחון הרכבים, ולקהל להתלהב. נחזיק אצבעות 💪</p>
+    <h2>עדכון אחרון</h2>
+    <p>הקבוצה יצאה עם סגל של 30 שחקנים למסע באסיה. הם נחתו בסינגפור ויתחילו מחנה אימונים שכולל גם סדרת משחקים. נאחל הצלחה לארטטה והשחקנים – אני כמובן אמשיך לעדכן.</p>
   </section>
+
+  <section class="question-box">
+    <h3>חידת השבוע</h3>
+    <p>מי הוא מלך השערים של ארסנל בכל הזמנים?</p>
+    <input type="text" id="answer" />
+    <button onclick="checkAnswer()">שלח תשובה</button>
+    <script>
+      function checkAnswer() {
+        var userAnswer = document.getElementById('answer').value.trim();
+        if (userAnswer === "תיירי הנרי" || userAnswer === "הנרי") {
+          alert("נכון! הנרי הוא מלך השערים עם 288 שערים בכל המסגרות.");
+        } else {
+          alert("לא נכון, נסו שוב.");
+        }
+      }
+    </script>
+  </section>
+
+  <section>
+    <h3>הצטרפו אליי!</h3>
+    <p>אם אתם אוהדי ארסנל או חובבי כדורגל – אני מזמין אתכם לעקוב אחרי הבלוג הזה, ולהיות חלק מהחוויה!</p>
+    <p>אפשר לשלוח לי מייל: <strong>idanschmidt1234@gmail.com</strong></p>
+  </section>
+
+  <footer>
+    <p>עודכן לאחרונה: 24 ביולי 2025</p>
+    <p><a href="https://www.365scores.com/he/football/team/arsenal-104" target="_blank">צפו בתוצאות וחדשות על ארסנל</a></p>
+  </footer>
 
 </body>
 </html>
